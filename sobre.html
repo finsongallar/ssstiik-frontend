@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre - SSSTiik | Quem Somos</title>
+    <meta name="description" content="Conheça o SSSTiik, a melhor ferramenta para baixar vídeos do TikTok sem marca d'água. Gratuito, rápido e seguro.">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⬇️</text></svg>">
+    <style>
+        :root {
+            --primary: #6c5ce7;
+            --primary-light: #a29bfe;
+            --gradient-start: #6c5ce7;
+            --gradient-end: #a29bfe;
+            --bg-body: #f5f5f7;
+            --bg-card: #ffffff;
+            --bg-card-hover: #f8f8fa;
+            --text-dark: #1a1a2e;
+            --text-gray: #6b7280;
+            --text-muted: #9ca3af;
+            --border: #e5e7eb;
+            --success: #10b981;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg-body);
+            color: var(--text-dark);
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+        header {
+            background: var(--bg-card);
+            padding: 1.25rem 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-dark);
+        }
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+        }
+        nav { display: flex; gap: 0.5rem; }
+        nav a {
+            color: var(--text-gray);
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.2s;
+        }
+        nav a:hover, nav a.active {
+            color: var(--text-dark);
+            background: var(--bg-card);
+        }
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem 4rem;
+        }
+        .page-header {
+            background: var(--bg-card);
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .page-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .page-header h1 .gradient {
+            background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .page-header p { color: var(--text-gray); font-size: 1.1rem; }
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        .card h2 {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+        .card p {
+            color: var(--text-gray);
+            margin-bottom: 1rem;
+            line-height: 1.7;
+        }
+        .card p:last-child { margin-bottom: 0; }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+        .stat {
+            text-align: center;
+            padding: 1.25rem;
+            background: var(--bg-card-hover);
+            border-radius: 12px;
+            border: 1px solid var(--border);
+        }
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .stat-label {
+            font-size: 0.85rem;
+            color: var(--text-gray);
+            margin-top: 0.25rem;
+        }
+        .values-list {
+            list-style: none;
+            margin-top: 1rem;
+        }
+        .values-list li {
+            padding: 0.75rem 0;
+            padding-left: 2rem;
+            position: relative;
+            color: var(--text-gray);
+            border-bottom: 1px solid var(--border);
+        }
+        .values-list li:last-child { border-bottom: none; }
+        .values-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--success);
+            font-weight: bold;
+        }
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(168, 85, 247, 0.1));
+            border: 1px solid rgba(99, 102, 241, 0.3);
+            border-radius: 12px;
+            padding: 1.25rem;
+            margin-top: 1.5rem;
+        }
+        .highlight-box p {
+            color: var(--text-dark);
+            margin: 0;
+        }
+        footer {
+            border-top: 1px solid var(--border);
+            padding: 2rem 1.5rem;
+            text-align: center;
+        }
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+        }
+        .footer-links a {
+            color: var(--text-gray);
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        .footer-links a:hover { color: var(--primary); }
+        .copyright { color: var(--text-muted); font-size: 0.85rem; }
+        @media (max-width: 768px) {
+            nav { display: none; }
+            .stats-grid { grid-template-columns: repeat(2, 1fr); }
+            .page-header h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="/" class="logo">
+            <div class="logo-icon">▼</div>
+            SSSTiik
+        </a>
+        <nav>
+            <a href="/">Início</a>
+            <a href="/sobre" class="active">Sobre</a>
+            <a href="/privacidade">Privacidade</a>
+            <a href="/termos">Termos</a>
+        </nav>
+    </header>
+
+    <main class="content">
+        <div class="page-header">
+            <h1>Sobre o <span class="gradient">SSSTiik</span></h1>
+            <p>Conheça nossa missão e valores</p>
+        </div>
+
+        <div class="card">
+            <h2>🎯 Nossa Missão</h2>
+            <p>
+                O SSSTiik nasceu com um objetivo simples: oferecer a melhor ferramenta para baixar vídeos do TikTok de forma rápida, segura e totalmente gratuita.
+            </p>
+            <p>
+                Sabemos que muitas vezes você quer salvar aquele vídeo engraçado para assistir offline, guardar um tutorial importante, ou simplesmente ter acesso ao conteúdo mesmo quando não estiver conectado à internet. Por isso, criamos uma solução que funciona em qualquer dispositivo, sem complicação.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>💡 Por Que Existimos?</h2>
+            <p>
+                O TikTok é uma das redes sociais que mais cresce no mundo, mas a plataforma não oferece uma opção nativa para salvar vídeos sem marca d'água. Isso pode ser frustrante quando você encontra um conteúdo valioso que gostaria de guardar em alta qualidade.
+            </p>
+            <p>
+                O SSSTiik resolve esse problema de forma elegante e acessível. Nossa ferramenta processa o link que você fornece e permite o download do conteúdo na melhor qualidade disponível, sem a marca d'água do TikTok.
+            </p>
+
+            <div class="stats-grid">
+                <div class="stat">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Gratuito</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">0</div>
+                    <div class="stat-label">Cadastro</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">∞</div>
+                    <div class="stat-label">Downloads</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">HD</div>
+                    <div class="stat-label">Qualidade</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>✨ Nossos Valores</h2>
+            <p>
+                Acreditamos que tecnologia de qualidade deve ser acessível a todos. Por isso, nosso serviço é guiado pelos seguintes princípios:
+            </p>
+            <ul class="values-list">
+                <li><strong>Simplicidade:</strong> Interface intuitiva que qualquer pessoa pode usar, independente de conhecimento técnico.</li>
+                <li><strong>Privacidade:</strong> Não coletamos dados pessoais, não rastreamos seu histórico de downloads e não exigimos cadastro.</li>
+                <li><strong>Qualidade:</strong> Sempre oferecemos o download na melhor resolução disponível, sem marca d'água.</li>
+                <li><strong>Acessibilidade:</strong> Funciona em qualquer dispositivo com navegador - celular, tablet ou computador.</li>
+                <li><strong>Gratuidade:</strong> Nosso serviço é e sempre será 100% gratuito, sem taxas escondidas.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>⚠️ Uso Responsável</h2>
+            <p>
+                O SSSTiik é uma ferramenta criada para uso pessoal e educacional. Incentivamos todos os usuários a respeitarem os direitos autorais e a propriedade intelectual dos criadores de conteúdo.
+            </p>
+            <p>
+                Antes de compartilhar ou reutilizar qualquer conteúdo baixado, certifique-se de ter permissão do criador original ou de que o uso está dentro das normas de direitos autorais aplicáveis.
+            </p>
+            <div class="highlight-box">
+                <p>💡 <strong>Dica:</strong> Se você gostou do conteúdo de um criador, considere seguir o perfil dele no TikTok e interagir com as publicações originais. Isso ajuda os criadores a crescerem!</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>📧 Contato</h2>
+            <p>
+                Tem alguma dúvida, sugestão ou encontrou algum problema? Adoraríamos ouvir você! Entre em contato conosco através do email:
+            </p>
+            <p>
+                <strong style="color: var(--primary);">contato@ssstiik.com</strong>
+            </p>
+            <p>
+                Respondemos todas as mensagens em até 48 horas úteis.
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="/">Início</a>
+            <a href="/sobre">Sobre</a>
+            <a href="/privacidade">Política de Privacidade</a>
+            <a href="/termos">Termos de Uso</a>
+            <a href="/contato">Contato</a>
+        </div>
+        <p class="copyright">© 2025 SSSTiik. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
