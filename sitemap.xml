@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <!-- PORTUGUÊS (Principal) -->
+  <url>
+    <loc>https://downloadanytiktok.com/</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://downloadanytiktok.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://downloadanytiktok.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://downloadanytiktok.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://downloadanytiktok.com/id/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://downloadanytiktok.com/en/"/>
+    <lastmod>2025-12-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <url>
+    <loc>https://downloadanytiktok.com/sobre.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://downloadanytiktok.com/sobre.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://downloadanytiktok.com/en/about.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://downloadanytiktok.com/es/acerca.html"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://downloadanytiktok.com/id/tentang.html"/>
+    <lastmod>2025-12-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://downloadanytiktok.com/contato.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://downloadanytiktok.com/contato.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://downloadanytiktok.com/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://downloadanytiktok.com/es/contacto.html"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://downloadanytiktok.com/id/kontak.html"/>
+    <lastmod>2025-12-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://downloadanytiktok.com/privacidade.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://downloadanytiktok.com/privacidade.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://downloadanytiktok.com/en/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://downloadanytiktok.com/es/privacidad.html"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://downloadanytiktok.com/id/privasi.html"/>
+    <lastmod>2025-12-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  
+  <url>
+    <loc>https://downloadanytiktok.com/termos.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://downloadanytiktok.com/termos.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://downloadanytiktok.com/en/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://downloadanytiktok.com/es/terminos.html"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://downloadanytiktok.com/id/syarat.html"/>
+    <lastmod>2025-12-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+  <!-- INGLÊS -->
+  <url>
+    <loc>https://downloadanytiktok.com/en/</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://downloadanytiktok.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://downloadanytiktok.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://downloadanytiktok.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://downloadanytiktok.com/id/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://downloadanytiktok.com/en/"/>
+    <lastmod>2025-12-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <url>
+    <loc>https://downloadanytiktok.com/en/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://downloadanytiktok.com/sobre.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://downloadanytiktok.com/en/about.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://downloadanytiktok.com/es/acerca.html"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://downloadanytiktok.com/id/tentang.html"/>
+    <lastmod>2025-12-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://downloadanytiktok.com/en/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://downloadanytiktok.com/contato.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://downloadanytiktok.com/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://downloadanytiktok.com/es/contacto.html"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://downloadanytiktok.com/id/kontak.html"/>
+    <lastmod>2025-12-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://downloadanytiktok.com/en/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://downloadanytiktok.com/privacidade.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://downloadanytiktok.com/en/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://downloadanytiktok.com/es/privacidad.html"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://downloadanytiktok.com/id/privasi.html"/>
+    <lastmod>2025-12-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  
+  <url>
+    <loc>https://downloadanytiktok.com/en/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://downloadanytiktok.com/termos.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://downloadanytiktok.com/en/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://downloadanytiktok.com/es/terminos.html"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://downloadanytiktok.com/id/syarat.html"/>
+    <lastmod>2025-12-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+  <!-- ESPANHOL -->
+  <url>
+    <loc>https://downloadanytiktok.com/es/</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://downloadanytiktok.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://downloadanytiktok.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://downloadanytiktok.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://downloadanytiktok.com/id/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://downloadanytiktok.com/en/"/>
+    <lastmod>2025-12-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <url>
+    <loc>https://downloadanytiktok.com/es/acerca.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://downloadanytiktok.com/sobre.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://downloadanytiktok.com/en/about.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://downloadanytiktok.com/es/acerca.html"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://downloadanytiktok.com/id/tentang.html"/>
+    <lastmod>2025-12-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://downloadanytiktok.com/es/contacto.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://downloadanytiktok.com/contato.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://downloadanytiktok.com/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://downloadanytiktok.com/es/contacto.html"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://downloadanytiktok.com/id/kontak.html"/>
+    <lastmod>2025-12-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://downloadanytiktok.com/es/privacidad.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://downloadanytiktok.com/privacidade.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://downloadanytiktok.com/en/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://downloadanytiktok.com/es/privacidad.html"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://downloadanytiktok.com/id/privasi.html"/>
+    <lastmod>2025-12-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  
+  <url>
+    <loc>https://downloadanytiktok.com/es/terminos.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://downloadanytiktok.com/termos.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://downloadanytiktok.com/en/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://downloadanytiktok.com/es/terminos.html"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://downloadanytiktok.com/id/syarat.html"/>
+    <lastmod>2025-12-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+  <!-- INDONÉSIO -->
+  <url>
+    <loc>https://downloadanytiktok.com/id/</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://downloadanytiktok.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://downloadanytiktok.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://downloadanytiktok.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://downloadanytiktok.com/id/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://downloadanytiktok.com/en/"/>
+    <lastmod>2025-12-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <url>
+    <loc>https://downloadanytiktok.com/id/tentang.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://downloadanytiktok.com/sobre.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://downloadanytiktok.com/en/about.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://downloadanytiktok.com/es/acerca.html"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://downloadanytiktok.com/id/tentang.html"/>
+    <lastmod>2025-12-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://downloadanytiktok.com/id/kontak.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://downloadanytiktok.com/contato.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://downloadanytiktok.com/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://downloadanytiktok.com/es/contacto.html"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://downloadanytiktok.com/id/kontak.html"/>
+    <lastmod>2025-12-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://downloadanytiktok.com/id/privasi.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://downloadanytiktok.com/privacidade.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://downloadanytiktok.com/en/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://downloadanytiktok.com/es/privacidad.html"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://downloadanytiktok.com/id/privasi.html"/>
+    <lastmod>2025-12-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  
+  <url>
+    <loc>https://downloadanytiktok.com/id/syarat.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://downloadanytiktok.com/termos.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://downloadanytiktok.com/en/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://downloadanytiktok.com/es/terminos.html"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://downloadanytiktok.com/id/syarat.html"/>
+    <lastmod>2025-12-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+</urlset>
