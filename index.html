@@ -738,8 +738,8 @@
                             <p id="resultMeta">MP4 • HD • Sem marca d'água</p>
                         </div>
                         <div class="result-buttons">
-                            <a href="#" class="btn-result primary" id="downloadHD" target="_blank">Baixar HD</a>
-                            <a href="#" class="btn-result secondary" id="downloadSD" target="_blank">Baixar SD</a>
+                            <a href="#" class="btn-result primary" id="downloadHD">Baixar HD</a>
+                            <a href="#" class="btn-result secondary" id="downloadSD">Baixar SD</a>
                         </div>
                     </div>
                     <div class="download-instructions">
@@ -943,8 +943,9 @@
                         document.getElementById('resultThumb').innerHTML = `<img src="${data.thumbnail}" alt="Thumbnail do vídeo TikTok">`;
                     }
                     
-                    downloadHD.href = `${API_URL}/download?url=${encodeURIComponent(data.video_hd || data.video)}`;
-                    downloadSD.href = `${API_URL}/download?url=${encodeURIComponent(data.video_sd || data.video)}`;
+                    const videoTitle = (data.title || 'tiktok_video').substring(0, 30);
+                    downloadHD.href = `${API_URL}/download?url=${encodeURIComponent(data.video_hd || data.video)}&filename=${encodeURIComponent(videoTitle)}_HD`;
+                    downloadSD.href = `${API_URL}/download?url=${encodeURIComponent(data.video_sd || data.video)}&filename=${encodeURIComponent(videoTitle)}_SD`;
                     
                     // Show results
                     results.classList.add('active');
