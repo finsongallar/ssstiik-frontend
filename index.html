@@ -943,8 +943,8 @@
                         document.getElementById('resultThumb').innerHTML = `<img src="${data.thumbnail}" alt="Thumbnail do vídeo TikTok">`;
                     }
                     
-                    downloadHD.href = data.video_hd || data.video;
-                    downloadSD.href = data.video_sd || data.video;
+                    downloadHD.href = `${API_URL}/download?url=${encodeURIComponent(data.video_hd || data.video)}`;
+                    downloadSD.href = `${API_URL}/download?url=${encodeURIComponent(data.video_sd || data.video)}`;
                     
                     // Show results
                     results.classList.add('active');
