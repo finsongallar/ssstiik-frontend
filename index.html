@@ -1,6 +1,29 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <script>
+    (function() {
+        const path = window.location.pathname;
+        if (path !== '/' && path !== '/index.html') return;
+        if (localStorage.getItem('lang_preference') === 'pt') return;
+        
+        const userLang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
+        let redirect = null;
+        
+        if (userLang.startsWith('pt')) {
+            localStorage.setItem('lang_preference', 'pt');
+            return;
+        } else if (userLang.startsWith('id')) {
+            redirect = '/id/';
+        } else if (userLang.startsWith('es')) {
+            redirect = '/es/';
+        } else {
+            redirect = '/en/';
+        }
+        
+        if (redirect) window.location.href = redirect;
+    })();
+    </script>
 
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17833490013"></script>
