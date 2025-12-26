@@ -3,34 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Política de Privacidade - SSSTiik</title>
-    <meta name="description" content="Política de Privacidade do SSSTiik. Saiba como tratamos seus dados e garantimos sua segurança.">
+    <title>Política de Privacidade - Download Any TikTok</title>
+    <meta name="description" content="Política de Privacidade do Download Any TikTok. Saiba como tratamos seus dados e protegemos sua privacidade.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://downloadanytiktok.com/privacidade.html">
+    
+    <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⬇️</text></svg>">
+    
     <style>
         :root {
-            --primary: #6c5ce7;
-            --primary-light: #a29bfe;
-            --gradient-start: #6c5ce7;
-            --gradient-end: #a29bfe;
-            --bg-body: #f5f5f7;
-            --bg-card: #ffffff;
-            --bg-card-hover: #f8f8fa;
-            --text-dark: #1a1a2e;
-            --text-gray: #6b7280;
-            --text-muted: #9ca3af;
-            --border: #e5e7eb;
-            --success: #10b981;
+            --primary: #ff6b6b;
+            --secondary: #feca57;
+            --bg-body: #0a0a0a;
+            --bg-card: #141414;
+            --text-white: #ffffff;
+            --text-gray: #a0a0a0;
+            --text-muted: #666666;
+            --border: #2a2a2a;
+            --gradient-start: #ff6b6b;
+            --gradient-end: #feca57;
         }
+
         * { margin: 0; padding: 0; box-sizing: border-box; }
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
             background: var(--bg-body);
-            color: var(--text-dark);
+            color: var(--text-white);
             min-height: 100vh;
             line-height: 1.6;
         }
+
         header {
-            background: var(--bg-card);
+            background: var(--bg-body);
             padding: 1.25rem 1.5rem;
             display: flex;
             justify-content: space-between;
@@ -38,15 +44,17 @@
             max-width: 1200px;
             margin: 0 auto;
         }
+
         .logo {
             display: flex;
             align-items: center;
             gap: 0.75rem;
             text-decoration: none;
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             font-weight: 700;
-            color: var(--text-dark);
+            color: var(--text-white);
         }
+
         .logo-icon {
             width: 40px;
             height: 40px;
@@ -56,8 +64,15 @@
             align-items: center;
             justify-content: center;
             font-size: 1.25rem;
+            color: white;
         }
-        nav { display: flex; gap: 0.5rem; }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+        }
+
         nav a {
             color: var(--text-gray);
             text-decoration: none;
@@ -67,97 +82,86 @@
             font-weight: 500;
             transition: all 0.2s;
         }
+
         nav a:hover, nav a.active {
-            color: var(--text-dark);
+            color: var(--text-white);
             background: var(--bg-card);
         }
+
+        .hero {
+            text-align: center;
+            padding: 4rem 1.5rem;
+            background: radial-gradient(ellipse at top, #1a1a2e 0%, var(--bg-body) 70%);
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--text-white);
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            color: var(--text-gray);
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
         .content {
             max-width: 800px;
             margin: 0 auto;
-            padding: 3rem 1.5rem 4rem;
+            padding: 4rem 1.5rem;
         }
-        .page-header {
-            background: var(--bg-card);
-            text-align: center;
-            margin-bottom: 3rem;
-        }
-        .page-header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-        }
-        .page-header h1 .gradient {
-            background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-        .page-header p { color: var(--text-gray); font-size: 1.1rem; }
-        .last-updated {
-            display: inline-block;
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            padding: 0.5rem 1rem;
-            border-radius: 8px;
-            font-size: 0.85rem;
-            color: var(--text-gray);
-            margin-top: 1rem;
-        }
-        .card {
+
+        .section {
             background: var(--bg-card);
             border: 1px solid var(--border);
             border-radius: 16px;
             padding: 2rem;
-            margin-bottom: 1.5rem;
+            margin-bottom: 2rem;
         }
-        .card h2 {
-            font-size: 1.2rem;
+
+        .section h2 {
+            font-size: 1.3rem;
+            color: var(--text-white);
             margin-bottom: 1rem;
-            color: var(--primary);
         }
-        .card h3 {
-            font-size: 1rem;
-            margin: 1.5rem 0 0.75rem;
-            color: var(--text-dark);
-        }
-        .card p {
+
+        .section p, .section li {
             color: var(--text-gray);
             margin-bottom: 1rem;
-            line-height: 1.7;
+            line-height: 1.8;
         }
-        .card p:last-child { margin-bottom: 0; }
-        .card ul {
-            list-style: none;
-            margin: 1rem 0;
+
+        .section ul {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
         }
-        .card ul li {
-            color: var(--text-gray);
-            padding: 0.5rem 0;
-            padding-left: 1.5rem;
-            position: relative;
-        }
-        .card ul li::before {
-            content: '•';
+
+        .section a {
             color: var(--primary);
-            position: absolute;
-            left: 0;
-            font-weight: bold;
+            text-decoration: none;
         }
-        .highlight-box {
-            background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(16, 185, 129, 0.05));
-            border: 1px solid rgba(16, 185, 129, 0.3);
-            border-radius: 12px;
-            padding: 1.25rem;
-            margin: 1.5rem 0;
+
+        .section a:hover {
+            text-decoration: underline;
         }
-        .highlight-box p {
-            color: #6ee7b7;
-            margin: 0;
+
+        .update-date {
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
         }
+
         footer {
+            background: var(--bg-card);
             border-top: 1px solid var(--border);
             padding: 2rem 1.5rem;
             text-align: center;
         }
+
         .footer-links {
             display: flex;
             justify-content: center;
@@ -165,17 +169,24 @@
             margin-bottom: 1rem;
             flex-wrap: wrap;
         }
+
         .footer-links a {
             color: var(--text-gray);
             text-decoration: none;
             font-size: 0.9rem;
+            transition: color 0.2s;
         }
+
         .footer-links a:hover { color: var(--primary); }
-        .copyright { color: var(--text-muted); font-size: 0.85rem; }
+
+        .copyright {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
         @media (max-width: 768px) {
             nav { display: none; }
-            .page-header h1 { font-size: 2rem; }
-            .card { padding: 1.5rem; }
+            .hero h1 { font-size: 2rem; }
         }
     </style>
 </head>
@@ -183,154 +194,129 @@
     <header>
         <a href="/" class="logo">
             <div class="logo-icon">▼</div>
-            SSSTiik
+            Download Any TikTok
         </a>
         <nav>
-            <a href="/">Início</a>
-            <a href="/sobre">Sobre</a>
-            <a href="/privacidade" class="active">Privacidade</a>
-            <a href="/termos">Termos</a>
+            <a href="/">Download</a>
+            <a href="/sobre.html">Sobre</a>
+            <a href="/contato.html">Contato</a>
         </nav>
     </header>
 
+    <section class="hero">
+        <h1>Política de Privacidade</h1>
+        <p>Sua privacidade é importante para nós. Saiba como tratamos seus dados.</p>
+    </section>
+
     <main class="content">
-        <div class="page-header">
-            <h1>Política de <span class="gradient">Privacidade</span></h1>
-            <p>Seu direito à privacidade é nossa prioridade</p>
-            <span class="last-updated">Última atualização: Janeiro de 2025</span>
+        <p class="update-date">Última atualização: 26 de Dezembro de 2025</p>
+
+        <div class="section">
+            <h2>1. Introdução</h2>
+            <p>O Download Any TikTok ("nós", "nosso" ou "site") está comprometido em proteger sua privacidade. Esta Política de Privacidade explica como coletamos, usamos e protegemos suas informações quando você usa nosso serviço de download de vídeos do TikTok.</p>
         </div>
 
-        <div class="card">
-            <h2>📋 Introdução</h2>
-            <p>
-                O SSSTiik ("nós", "nosso" ou "site") tem o compromisso de proteger a privacidade de todos os usuários que acessam nossa plataforma. Esta Política de Privacidade descreve como coletamos, usamos e protegemos suas informações quando você utiliza nossos serviços.
-            </p>
-            <p>
-                Ao utilizar o SSSTiik, você concorda com as práticas descritas nesta política.
-            </p>
-            <div class="highlight-box">
-                <p>🔒 <strong>Resumo:</strong> Não coletamos dados pessoais, não exigimos cadastro e não armazenamos os links que você processa em nossa plataforma.</p>
-            </div>
-        </div>
-
-        <div class="card">
-            <h2>📊 Informações que Coletamos</h2>
-            
-            <h3>Informações Não Coletadas</h3>
-            <p>O SSSTiik foi projetado com privacidade em mente. <strong>NÃO coletamos</strong>:</p>
+        <div class="section">
+            <h2>2. Informações que Coletamos</h2>
+            <p>Nosso serviço foi projetado para coletar o mínimo de informações necessárias:</p>
             <ul>
-                <li>Nome, email ou qualquer informação pessoal identificável</li>
-                <li>Histórico de links processados ou downloads realizados</li>
-                <li>Credenciais de acesso ao TikTok ou outras redes sociais</li>
-                <li>Informações de pagamento (nosso serviço é 100% gratuito)</li>
-            </ul>
-
-            <h3>Informações Coletadas Automaticamente</h3>
-            <p>Como a maioria dos sites, podemos coletar automaticamente algumas informações técnicas:</p>
-            <ul>
-                <li>Endereço IP (anonimizado para fins de segurança)</li>
-                <li>Tipo de navegador e dispositivo utilizado</li>
-                <li>País de origem do acesso (não a localização exata)</li>
-                <li>Páginas visitadas e tempo de permanência no site</li>
-            </ul>
-            <p>
-                Essas informações são utilizadas exclusivamente para melhorar nosso serviço e gerar estatísticas agregadas de uso.
-            </p>
-        </div>
-
-        <div class="card">
-            <h2>🍪 Cookies e Tecnologias Similares</h2>
-            <p>
-                O SSSTiik utiliza cookies e tecnologias similares para melhorar sua experiência de navegação.
-            </p>
-            
-            <h3>Tipos de Cookies Utilizados</h3>
-            <ul>
-                <li><strong>Cookies Essenciais:</strong> Necessários para o funcionamento básico do site.</li>
-                <li><strong>Cookies de Análise:</strong> Utilizamos o Google Analytics para entender como os visitantes usam nosso site. Esses dados são agregados e anônimos.</li>
-                <li><strong>Cookies de Publicidade:</strong> Nossos parceiros de publicidade (como o Google AdSense) podem usar cookies para exibir anúncios relevantes.</li>
-            </ul>
-
-            <h3>Gerenciamento de Cookies</h3>
-            <p>
-                Você pode gerenciar ou desativar cookies através das configurações do seu navegador. Note que desativar certos cookies pode afetar a funcionalidade do site.
-            </p>
-        </div>
-
-        <div class="card">
-            <h2>📢 Publicidade</h2>
-            <p>
-                O SSSTiik exibe anúncios fornecidos por redes de publicidade terceirizadas, incluindo o Google AdSense. Esses parceiros podem coletar informações sobre suas visitas para fornecer anúncios relevantes.
-            </p>
-            <p>
-                Você pode optar por desativar a publicidade personalizada visitando as <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener" style="color: var(--primary);">Configurações de Anúncios do Google</a>.
-            </p>
-        </div>
-
-        <div class="card">
-            <h2>🛡️ Segurança dos Dados</h2>
-            <p>
-                Implementamos medidas de segurança técnicas e organizacionais apropriadas para proteger as informações, incluindo:
-            </p>
-            <ul>
-                <li>Conexão segura via HTTPS em todo o site</li>
-                <li>Servidores protegidos com firewalls</li>
-                <li>Atualizações regulares de segurança</li>
-                <li>Acesso restrito aos sistemas</li>
+                <li><strong>URLs de vídeos:</strong> Coletamos temporariamente os links do TikTok que você insere para processar o download. Esses links não são armazenados permanentemente.</li>
+                <li><strong>Dados de uso:</strong> Podemos coletar informações anônimas sobre como você usa nosso site, como páginas visitadas e tempo de permanência.</li>
+                <li><strong>Informações técnicas:</strong> Tipo de navegador, sistema operacional e endereço IP (anonimizado) para fins de segurança e análise.</li>
             </ul>
         </div>
 
-        <div class="card">
-            <h2>👶 Privacidade de Menores</h2>
-            <p>
-                O SSSTiik não é direcionado a menores de 13 anos. Não coletamos intencionalmente informações pessoais de crianças. Se você é pai ou responsável e acredita que seu filho nos forneceu informações pessoais, entre em contato conosco.
-            </p>
-        </div>
-
-        <div class="card">
-            <h2>⚖️ Seus Direitos (LGPD)</h2>
-            <p>
-                De acordo com a Lei Geral de Proteção de Dados (LGPD), você tem direito a:
-            </p>
+        <div class="section">
+            <h2>3. O que NÃO Coletamos</h2>
+            <p>Para sua tranquilidade, informamos que NÃO coletamos:</p>
             <ul>
-                <li>Confirmar a existência de tratamento de dados pessoais</li>
-                <li>Acessar seus dados pessoais</li>
-                <li>Corrigir dados incompletos ou desatualizados</li>
-                <li>Solicitar a eliminação de dados</li>
-                <li>Revogar o consentimento a qualquer momento</li>
+                <li>Informações pessoais identificáveis (nome, endereço, telefone)</li>
+                <li>Credenciais de login do TikTok ou qualquer outra plataforma</li>
+                <li>Os vídeos que você baixa (não armazenamos cópias)</li>
+                <li>Histórico de downloads vinculado a usuários específicos</li>
+                <li>Informações de pagamento (nosso serviço é gratuito)</li>
             </ul>
-            <p>
-                Como não coletamos dados pessoais identificáveis, a maioria desses direitos já é automaticamente respeitada.
-            </p>
         </div>
 
-        <div class="card">
-            <h2>📝 Alterações nesta Política</h2>
-            <p>
-                Podemos atualizar esta Política de Privacidade periodicamente. Alterações significativas serão comunicadas através do site. Recomendamos revisar esta política periodicamente.
-            </p>
+        <div class="section">
+            <h2>4. Como Usamos as Informações</h2>
+            <p>As informações coletadas são usadas exclusivamente para:</p>
+            <ul>
+                <li>Processar suas solicitações de download de vídeos</li>
+                <li>Melhorar e otimizar nosso serviço</li>
+                <li>Detectar e prevenir abusos ou uso indevido</li>
+                <li>Gerar estatísticas anônimas de uso</li>
+            </ul>
         </div>
 
-        <div class="card">
-            <h2>📧 Contato</h2>
-            <p>
-                Se você tiver dúvidas sobre esta Política de Privacidade, entre em contato:
-            </p>
-            <p>
-                <strong>Email:</strong> <span style="color: var(--primary);">privacidade@ssstiik.com</span>
-            </p>
+        <div class="section">
+            <h2>5. Cookies e Tecnologias Similares</h2>
+            <p>Nosso site pode usar cookies para:</p>
+            <ul>
+                <li>Lembrar suas preferências de uso</li>
+                <li>Analisar o tráfego do site (Google Analytics)</li>
+                <li>Exibir anúncios relevantes (Google AdSense)</li>
+            </ul>
+            <p>Você pode configurar seu navegador para recusar cookies, mas isso pode afetar algumas funcionalidades do site.</p>
+        </div>
+
+        <div class="section">
+            <h2>6. Publicidade</h2>
+            <p>Utilizamos serviços de publicidade de terceiros, como o Google AdSense, para exibir anúncios em nosso site. Esses serviços podem usar cookies para exibir anúncios baseados em visitas anteriores a este e outros sites. Você pode desativar a publicidade personalizada visitando as Configurações de Anúncios do Google.</p>
+        </div>
+
+        <div class="section">
+            <h2>7. Compartilhamento de Dados</h2>
+            <p>Não vendemos, alugamos ou compartilhamos suas informações pessoais com terceiros, exceto:</p>
+            <ul>
+                <li>Quando exigido por lei ou ordem judicial</li>
+                <li>Para proteger nossos direitos legais</li>
+                <li>Com provedores de serviços que nos auxiliam (hosting, analytics), sob rigorosos acordos de confidencialidade</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>8. Segurança</h2>
+            <p>Implementamos medidas de segurança técnicas e organizacionais para proteger suas informações, incluindo:</p>
+            <ul>
+                <li>Conexão segura via HTTPS</li>
+                <li>Servidores protegidos e monitorados</li>
+                <li>Acesso restrito às informações</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>9. Seus Direitos</h2>
+            <p>Você tem o direito de:</p>
+            <ul>
+                <li>Acessar as informações que temos sobre você</li>
+                <li>Solicitar a correção de informações incorretas</li>
+                <li>Solicitar a exclusão de suas informações</li>
+                <li>Optar por não receber comunicações de marketing</li>
+            </ul>
+            <p>Para exercer esses direitos, entre em contato através da nossa <a href="/contato.html">página de contato</a>.</p>
+        </div>
+
+        <div class="section">
+            <h2>10. Menores de Idade</h2>
+            <p>Nosso serviço não é direcionado a menores de 13 anos. Não coletamos intencionalmente informações de crianças. Se você acredita que coletamos informações de um menor, entre em contato conosco imediatamente.</p>
+        </div>
+
+        <div class="section">
+            <h2>11. Alterações nesta Política</h2>
+            <p>Podemos atualizar esta Política de Privacidade periodicamente. Alterações significativas serão comunicadas através de um aviso em nosso site. Recomendamos que você revise esta página regularmente.</p>
         </div>
     </main>
 
     <footer>
         <div class="footer-links">
-            <a href="/">Início</a>
-            <a href="/sobre">Sobre</a>
-            <a href="/privacidade">Política de Privacidade</a>
-            <a href="/termos">Termos de Uso</a>
-            <a href="/contato">Contato</a>
+            <a href="/">Download</a>
+            <a href="/sobre.html">Sobre</a>
+            <a href="/privacidade.html">Política de Privacidade</a>
+            <a href="/termos.html">Termos de Uso</a>
+            <a href="/contato.html">Contato</a>
         </div>
-        <p class="copyright">© 2025 SSSTiik. Todos os direitos reservados.</p>
+        <p class="copyright">© 2025 Download Any TikTok. Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>

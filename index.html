@@ -28,21 +28,21 @@
     
     <style>
         :root {
-            --primary: #6c5ce7;
-            --primary-light: #a29bfe;
-            --primary-dark: #5541d7;
-            --gradient-start: #6c5ce7;
-            --gradient-end: #a29bfe;
-            --bg-body: #f5f5f7;
-            --bg-white: #ffffff;
-            --bg-card: #ffffff;
-            --bg-card-hover: #f8f8fa;
-            --bg-input: #ffffff;
-            --text-dark: #1a1a2e;
-            --text-gray: #6b7280;
-            --text-muted: #9ca3af;
-            --border: #e5e7eb;
+            --primary: #ff6b6b;
+            --primary-light: #ff8e8e;
+            --primary-dark: #ee5a5a;
+            --secondary: #feca57;
+            --bg-body: #0a0a0a;
+            --bg-card: #141414;
+            --bg-card-hover: #1a1a1a;
+            --bg-input: #1a1a1a;
+            --text-white: #ffffff;
+            --text-gray: #a0a0a0;
+            --text-muted: #666666;
+            --border: #2a2a2a;
             --success: #10b981;
+            --gradient-start: #ff6b6b;
+            --gradient-end: #feca57;
         }
 
         * {
@@ -54,14 +54,14 @@
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
             background: var(--bg-body);
-            color: var(--text-dark);
+            color: var(--text-white);
             min-height: 100vh;
             line-height: 1.6;
         }
 
         /* Header */
         header {
-            background: var(--bg-white);
+            background: var(--bg-body);
             padding: 1.25rem 1.5rem;
             display: flex;
             justify-content: space-between;
@@ -75,9 +75,9 @@
             align-items: center;
             gap: 0.75rem;
             text-decoration: none;
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             font-weight: 700;
-            color: var(--text-dark);
+            color: var(--text-white);
         }
 
         .logo-icon {
@@ -95,7 +95,7 @@
         nav {
             display: flex;
             align-items: center;
-            gap: 0.5rem;
+            gap: 0.25rem;
         }
 
         nav a {
@@ -110,15 +110,15 @@
 
         nav a:hover,
         nav a.active {
-            color: var(--text-dark);
-            background: var(--bg-body);
+            color: var(--text-white);
+            background: var(--bg-card);
         }
 
         /* Hero Section */
         .hero {
-            background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
             text-align: center;
             padding: 4rem 1.5rem 3rem;
+            background: radial-gradient(ellipse at top, #1a1a2e 0%, var(--bg-body) 70%);
         }
 
         .hero-container {
@@ -130,12 +130,12 @@
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
-            background: rgba(255, 255, 255, 0.15);
-            border: 1px solid rgba(255, 255, 255, 0.3);
+            background: rgba(255, 107, 107, 0.15);
+            border: 1px solid rgba(255, 107, 107, 0.3);
             padding: 0.5rem 1.25rem;
             border-radius: 50px;
             font-size: 0.85rem;
-            color: white;
+            color: var(--primary);
             margin-bottom: 2rem;
         }
 
@@ -143,7 +143,7 @@
             content: '';
             width: 8px;
             height: 8px;
-            background: #4ade80;
+            background: var(--success);
             border-radius: 50%;
         }
 
@@ -152,17 +152,18 @@
             font-weight: 700;
             line-height: 1.1;
             margin-bottom: 1.25rem;
-            color: white;
+            color: var(--text-white);
         }
 
         .hero h1 .gradient {
-            color: white;
-            background: none;
-            -webkit-text-fill-color: white;
+            background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
 
         .hero p {
-            color: rgba(255, 255, 255, 0.85);
+            color: var(--text-gray);
             font-size: 1.1rem;
             max-width: 550px;
             margin: 0 auto 2.5rem;
@@ -170,12 +171,12 @@
 
         /* Download Box */
         .download-container {
-            background: var(--bg-white);
+            background: var(--bg-card);
+            border: 1px solid var(--border);
             border-radius: 20px;
             padding: 1.5rem;
             max-width: 700px;
             margin: 0 auto;
-            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
         }
 
         .download-box {
@@ -202,11 +203,11 @@
         .download-box input {
             width: 100%;
             padding: 1rem 1rem 1rem 3.25rem;
-            background: var(--bg-body);
+            background: var(--bg-input);
             border: 1px solid var(--border);
             border-radius: 12px;
             font-size: 1rem;
-            color: var(--text-dark);
+            color: var(--text-white);
             transition: border-color 0.2s;
         }
 
@@ -221,7 +222,7 @@
 
         .btn-download {
             padding: 1rem 2rem;
-            background: var(--primary);
+            background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
             border: none;
             border-radius: 12px;
             color: white;
@@ -236,9 +237,8 @@
         }
 
         .btn-download:hover {
-            background: var(--primary-dark);
             transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(108, 92, 231, 0.35);
+            box-shadow: 0 8px 25px rgba(255, 107, 107, 0.35);
         }
 
         .features-tags {
@@ -262,27 +262,15 @@
             font-weight: bold;
         }
 
-        /* Ad Space */
-        .ad-space {
-            max-width: 700px;
-            margin: 2rem auto 0;
-            padding: 2rem;
-            border: 1px dashed rgba(255, 255, 255, 0.3);
-            border-radius: 12px;
-            text-align: center;
-            color: rgba(255, 255, 255, 0.7);
-            font-size: 0.85rem;
-        }
-
         /* Results */
         .results {
             display: none;
             max-width: 700px;
             margin: 1.5rem auto 0;
-            background: var(--bg-white);
+            background: var(--bg-card);
+            border: 1px solid var(--border);
             border-radius: 16px;
             padding: 1.5rem;
-            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
         }
 
         .results.active {
@@ -304,7 +292,7 @@
         .result-thumb {
             width: 80px;
             height: 100px;
-            background: var(--bg-body);
+            background: var(--bg-input);
             border-radius: 8px;
             display: flex;
             align-items: center;
@@ -332,7 +320,7 @@
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
-            color: var(--text-dark);
+            color: var(--text-white);
         }
 
         .result-info p {
@@ -367,8 +355,8 @@
         }
 
         .btn-result.secondary {
-            background: var(--bg-body);
-            color: var(--text-dark);
+            background: var(--bg-input);
+            color: var(--text-white);
             border: 1px solid var(--border);
         }
 
@@ -380,10 +368,11 @@
         .download-instructions {
             margin-top: 1rem;
             padding: 1rem;
-            background: #fef3c7;
+            background: rgba(254, 202, 87, 0.1);
+            border: 1px solid rgba(254, 202, 87, 0.3);
             border-radius: 8px;
             font-size: 0.85rem;
-            color: #92400e;
+            color: var(--secondary);
         }
 
         .download-instructions strong {
@@ -398,7 +387,7 @@
             justify-content: center;
             gap: 0.75rem;
             padding: 1.5rem;
-            color: rgba(255, 255, 255, 0.9);
+            color: var(--text-gray);
         }
 
         .loading.active { display: flex; }
@@ -406,8 +395,8 @@
         .spinner {
             width: 20px;
             height: 20px;
-            border: 2px solid rgba(255, 255, 255, 0.3);
-            border-top-color: white;
+            border: 2px solid var(--border);
+            border-top-color: var(--primary);
             border-radius: 50%;
             animation: spin 0.8s linear infinite;
         }
@@ -421,7 +410,7 @@
             display: none;
             background: rgba(239, 68, 68, 0.15);
             border: 1px solid rgba(239, 68, 68, 0.3);
-            color: #fef2f2;
+            color: #fca5a5;
             padding: 1rem;
             border-radius: 12px;
             margin-top: 1rem;
@@ -444,7 +433,7 @@
             text-align: center;
             font-size: 2rem;
             margin-bottom: 3rem;
-            color: var(--text-dark);
+            color: var(--text-white);
         }
 
         .features-grid {
@@ -454,7 +443,7 @@
         }
 
         .feature-card {
-            background: var(--bg-white);
+            background: var(--bg-card);
             border: 1px solid var(--border);
             border-radius: 16px;
             padding: 1.75rem;
@@ -462,15 +451,14 @@
         }
 
         .feature-card:hover {
-            border-color: var(--primary-light);
+            border-color: var(--primary);
             transform: translateY(-4px);
-            box-shadow: 0 8px 24px rgba(108, 92, 231, 0.1);
         }
 
         .feature-icon {
             width: 48px;
             height: 48px;
-            background: linear-gradient(135deg, rgba(108, 92, 231, 0.15), rgba(162, 155, 254, 0.15));
+            background: linear-gradient(135deg, rgba(255, 107, 107, 0.15), rgba(254, 202, 87, 0.15));
             border-radius: 12px;
             display: flex;
             align-items: center;
@@ -482,7 +470,7 @@
         .feature-card h3 {
             font-size: 1.1rem;
             margin-bottom: 0.5rem;
-            color: var(--text-dark);
+            color: var(--text-white);
         }
 
         .feature-card p {
@@ -502,7 +490,7 @@
             text-align: center;
             font-size: 2rem;
             margin-bottom: 3rem;
-            color: var(--text-dark);
+            color: var(--text-white);
         }
 
         .steps {
@@ -534,7 +522,7 @@
         .step-content h3 {
             font-size: 1.1rem;
             margin-bottom: 0.25rem;
-            color: var(--text-dark);
+            color: var(--text-white);
         }
 
         .step-content p {
@@ -553,11 +541,11 @@
             text-align: center;
             font-size: 2rem;
             margin-bottom: 2rem;
-            color: var(--text-dark);
+            color: var(--text-white);
         }
 
         .faq-item {
-            background: var(--bg-white);
+            background: var(--bg-card);
             border: 1px solid var(--border);
             border-radius: 12px;
             margin-bottom: 0.75rem;
@@ -572,11 +560,11 @@
             justify-content: space-between;
             align-items: center;
             transition: background 0.2s;
-            color: var(--text-dark);
+            color: var(--text-white);
         }
 
         .faq-question:hover {
-            background: var(--bg-body);
+            background: var(--bg-card-hover);
         }
 
         .faq-question::after {
@@ -603,7 +591,7 @@
 
         /* Footer */
         footer {
-            background: var(--bg-white);
+            background: var(--bg-card);
             border-top: 1px solid var(--border);
             padding: 2rem 1.5rem;
             text-align: center;
@@ -675,12 +663,12 @@
     <header>
         <a href="/" class="logo">
             <div class="logo-icon">▼</div>
-            SSSTiik
+            Download Any TikTok
         </a>
         <nav>
-            <a href="/" class="active">Vídeo</a>
-            <a href="/sobre">Sobre</a>
-            <a href="/contato">Contato</a>
+            <a href="/" class="active">Download</a>
+            <a href="/sobre.html">Sobre</a>
+            <a href="/contato.html">Contato</a>
         </nav>
     </header>
 
@@ -690,8 +678,8 @@
                 <div class="badge">100% Gratuito • Sem Limites</div>
                 
                 <h1>
-                    Download Any TikTok<br>
-                    <span class="gradient">Sem Marca D'água</span>
+                    Baixe <span class="gradient">Vídeos do TikTok</span><br>
+                    Sem Marca D'água
                 </h1>
                 
                 <p>Baixe vídeos do TikTok sem marca d'água em HD. Cole o link e faça download grátis. Rápido, fácil e sem cadastro.</p>
@@ -709,7 +697,7 @@
                                 >
                             </div>
                             <button type="submit" class="btn-download">
-                                ⬇️ Baixar
+                                DOWNLOAD
                             </button>
                         </div>
                     </form>
@@ -738,19 +726,14 @@
                             <p id="resultMeta">MP4 • HD • Sem marca d'água</p>
                         </div>
                         <div class="result-buttons">
-                            <a href="#" class="btn-result primary" id="downloadHD">Baixar HD</a>
-                            <a href="#" class="btn-result secondary" id="downloadSD">Baixar SD</a>
+                            <a href="#" class="btn-result primary" id="downloadHD">Download HD</a>
+                            <a href="#" class="btn-result secondary" id="downloadSD">Download SD</a>
                         </div>
                     </div>
                     <div class="download-instructions">
                         <strong>💡 Como salvar o vídeo:</strong>
                         O vídeo abrirá em uma nova aba. Clique com o botão direito no vídeo e selecione "Salvar vídeo como..." para baixar no seu dispositivo.
                     </div>
-                </div>
-
-                <!-- Espaço para anúncio -->
-                <div class="ad-space">
-                    Espaço reservado para anúncio (Google AdSense)
                 </div>
             </div>
         </section>
@@ -761,121 +744,107 @@
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-icon">⚡</div>
-                    <h3>Download Rápido</h3>
-                    <p>Baixe vídeos do TikTok em segundos. Processamento instantâneo em alta velocidade.</p>
+                    <h3>Super Rápido</h3>
+                    <p>Downloads instantâneos em alta velocidade. Seu vídeo fica pronto em segundos.</p>
                 </div>
 
                 <div class="feature-card">
                     <div class="feature-icon">🔒</div>
                     <h3>100% Seguro</h3>
-                    <p>Não armazenamos seus dados. Sua privacidade é nossa prioridade. Sem cadastro necessário.</p>
+                    <p>Não armazenamos seus dados. Sua privacidade é nossa prioridade.</p>
                 </div>
 
                 <div class="feature-card">
                     <div class="feature-icon">📱</div>
-                    <h3>Funciona em Todos Dispositivos</h3>
-                    <p>Use no celular Android, iPhone, tablet ou computador. Sem precisar instalar nenhum app.</p>
+                    <h3>Funciona em Tudo</h3>
+                    <p>Use no celular, tablet ou computador. Sem precisar instalar nada.</p>
                 </div>
 
                 <div class="feature-card">
                     <div class="feature-icon">✨</div>
                     <h3>Sem Marca D'água</h3>
-                    <p>Baixe vídeos do TikTok limpos, sem o logo ou marca d'água. Qualidade original mantida.</p>
+                    <p>Baixe vídeos limpos, sem o logo do TikTok. Qualidade original mantida.</p>
                 </div>
 
                 <div class="feature-card">
                     <div class="feature-icon">∞</div>
-                    <h3>Downloads Ilimitados</h3>
-                    <p>Baixe quantos vídeos do TikTok quiser. Sem limite diário, sem restrições.</p>
+                    <h3>Sem Limites</h3>
+                    <p>Baixe quantos vídeos quiser. Sem cadastro, sem restrições.</p>
                 </div>
 
                 <div class="feature-card">
                     <div class="feature-icon">🎵</div>
-                    <h3>Qualidade HD</h3>
-                    <p>Download de vídeos TikTok em alta definição. Escolha entre qualidade HD ou SD.</p>
+                    <h3>Alta Qualidade</h3>
+                    <p>Baixe vídeos na melhor resolução disponível, até 1080p HD.</p>
                 </div>
             </div>
         </section>
 
         <section class="how-section">
-            <h2>Como Baixar Vídeo do TikTok?</h2>
+            <h2>Como Baixar?</h2>
             
             <div class="steps">
                 <div class="step">
                     <div class="step-number">1</div>
                     <div class="step-content">
-                        <h3>Copie o Link do TikTok</h3>
-                        <p>Abra o app do TikTok, encontre o vídeo que deseja baixar, toque em "Compartilhar" e depois em "Copiar link".</p>
+                        <h3>Copie o Link</h3>
+                        <p>Abra o TikTok, vá até o vídeo que deseja baixar e copie o link (URL).</p>
                     </div>
                 </div>
 
                 <div class="step">
                     <div class="step-number">2</div>
                     <div class="step-content">
-                        <h3>Cole o Link Aqui</h3>
-                        <p>Cole o link do vídeo do TikTok no campo acima e clique no botão "Baixar".</p>
+                        <h3>Cole Aqui</h3>
+                        <p>Cole o link no campo acima e clique no botão "Download".</p>
                     </div>
                 </div>
 
                 <div class="step">
                     <div class="step-number">3</div>
                     <div class="step-content">
-                        <h3>Salve o Vídeo</h3>
-                        <p>Clique em "Baixar HD" para abrir o vídeo. Depois clique com botão direito e selecione "Salvar vídeo como..." para salvar.</p>
+                        <h3>Baixe o Vídeo</h3>
+                        <p>Aguarde o processamento e clique em "Download HD" para salvar no seu dispositivo.</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <section class="faq-section">
-            <h2>Perguntas Frequentes sobre Download de TikTok</h2>
+            <h2>Perguntas Frequentes</h2>
 
             <div class="faq-item">
                 <div class="faq-question">É grátis baixar vídeos do TikTok?</div>
                 <div class="faq-answer">
-                    Sim! O Download Any TikTok é 100% gratuito. Você pode baixar quantos vídeos quiser sem pagar nada e sem necessidade de cadastro ou criar conta.
+                    Sim! O Download Any TikTok é 100% gratuito. Você pode baixar quantos vídeos quiser sem pagar nada e sem necessidade de cadastro.
                 </div>
             </div>
 
             <div class="faq-item">
-                <div class="faq-question">Como baixar vídeo do TikTok sem marca d'água?</div>
+                <div class="faq-question">Como baixar vídeo sem marca d'água?</div>
                 <div class="faq-answer">
-                    É muito simples! Copie o link do vídeo no TikTok, cole no campo acima e clique em "Baixar". Nossa ferramenta remove automaticamente a marca d'água, permitindo que você tenha vídeos limpos e profissionais.
+                    É muito simples! Copie o link do vídeo no TikTok, cole no campo acima e clique em "Download". Nossa ferramenta remove automaticamente a marca d'água.
                 </div>
             </div>
 
             <div class="faq-item">
-                <div class="faq-question">Funciona no celular iPhone e Android?</div>
+                <div class="faq-question">Funciona no celular?</div>
                 <div class="faq-answer">
-                    Sim! O Download Any TikTok funciona em qualquer dispositivo com navegador: celular Android, iPhone (iOS), iPad, tablet ou computador (Windows, Mac, Linux). Não precisa instalar nenhum aplicativo.
+                    Sim! O Download Any TikTok funciona em qualquer dispositivo com navegador: celular Android, iPhone, tablet ou computador. Não precisa instalar nenhum aplicativo.
                 </div>
             </div>
 
             <div class="faq-item">
-                <div class="faq-question">Como salvar o vídeo no meu celular?</div>
+                <div class="faq-question">Como salvar o vídeo no celular?</div>
                 <div class="faq-answer">
-                    Após clicar em "Baixar HD", o vídeo abrirá em uma nova aba. No celular, toque e segure no vídeo e selecione "Baixar vídeo" ou "Salvar vídeo". No computador, clique com botão direito e escolha "Salvar vídeo como...".
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question">Os vídeos baixados são salvos onde?</div>
-                <div class="faq-answer">
-                    Os vídeos são salvos na pasta de downloads do seu dispositivo. No celular Android, ficam na pasta "Downloads" ou na Galeria. No iPhone, ficam no app "Arquivos" ou na biblioteca de Fotos. No computador, ficam na pasta "Downloads".
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question">Posso baixar vídeos privados do TikTok?</div>
-                <div class="faq-answer">
-                    Não. Nossa ferramenta só consegue baixar vídeos públicos do TikTok. Vídeos privados ou de contas privadas não podem ser acessados por questões de privacidade.
+                    Após clicar em "Download HD", o vídeo abrirá em uma nova aba. No celular, toque e segure no vídeo e selecione "Baixar vídeo" ou "Salvar vídeo".
                 </div>
             </div>
 
             <div class="faq-item">
                 <div class="faq-question">É seguro usar este site?</div>
                 <div class="faq-answer">
-                    Sim, é completamente seguro! Não pedimos login, não coletamos dados pessoais e não armazenamos os vídeos. O site usa conexão segura HTTPS e não requer instalação de nenhum software.
+                    Sim, é completamente seguro! Não pedimos login, não coletamos dados pessoais e não armazenamos os vídeos. O site usa conexão segura HTTPS.
                 </div>
             </div>
         </section>
@@ -883,10 +852,11 @@
 
     <footer>
         <div class="footer-links">
-            <a href="/sobre">Sobre</a>
-            <a href="/privacidade">Política de Privacidade</a>
-            <a href="/termos">Termos de Uso</a>
-            <a href="/contato">Contato</a>
+            <a href="/">Download</a>
+            <a href="/sobre.html">Sobre</a>
+            <a href="/privacidade.html">Política de Privacidade</a>
+            <a href="/termos.html">Termos de Uso</a>
+            <a href="/contato.html">Contato</a>
         </div>
         <p class="copyright">© 2025 Download Any TikTok. Todos os direitos reservados.</p>
     </footer>

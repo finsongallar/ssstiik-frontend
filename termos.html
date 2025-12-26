@@ -3,35 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Termos de Uso - SSSTiik</title>
-    <meta name="description" content="Termos de Uso do SSSTiik. Conheça as regras e condições para utilizar nossa plataforma de download de vídeos do TikTok.">
+    <title>Termos de Uso - Download Any TikTok</title>
+    <meta name="description" content="Termos de Uso do Download Any TikTok. Leia as condições de uso do nosso serviço de download de vídeos.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://downloadanytiktok.com/termos.html">
+    
+    <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⬇️</text></svg>">
+    
     <style>
         :root {
-            --primary: #6c5ce7;
-            --primary-light: #a29bfe;
-            --gradient-start: #6c5ce7;
-            --gradient-end: #a29bfe;
-            --bg-body: #f5f5f7;
-            --bg-card: #ffffff;
-            --bg-card-hover: #f8f8fa;
-            --text-dark: #1a1a2e;
-            --text-gray: #6b7280;
-            --text-muted: #9ca3af;
-            --border: #e5e7eb;
-            --warning: #f59e0b;
-            --danger: #ef4444;
+            --primary: #ff6b6b;
+            --secondary: #feca57;
+            --bg-body: #0a0a0a;
+            --bg-card: #141414;
+            --text-white: #ffffff;
+            --text-gray: #a0a0a0;
+            --text-muted: #666666;
+            --border: #2a2a2a;
+            --gradient-start: #ff6b6b;
+            --gradient-end: #feca57;
         }
+
         * { margin: 0; padding: 0; box-sizing: border-box; }
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
             background: var(--bg-body);
-            color: var(--text-dark);
+            color: var(--text-white);
             min-height: 100vh;
             line-height: 1.6;
         }
+
         header {
-            background: var(--bg-card);
+            background: var(--bg-body);
             padding: 1.25rem 1.5rem;
             display: flex;
             justify-content: space-between;
@@ -39,15 +44,17 @@
             max-width: 1200px;
             margin: 0 auto;
         }
+
         .logo {
             display: flex;
             align-items: center;
             gap: 0.75rem;
             text-decoration: none;
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             font-weight: 700;
-            color: var(--text-dark);
+            color: var(--text-white);
         }
+
         .logo-icon {
             width: 40px;
             height: 40px;
@@ -57,8 +64,15 @@
             align-items: center;
             justify-content: center;
             font-size: 1.25rem;
+            color: white;
         }
-        nav { display: flex; gap: 0.5rem; }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+        }
+
         nav a {
             color: var(--text-gray);
             text-decoration: none;
@@ -68,99 +82,99 @@
             font-weight: 500;
             transition: all 0.2s;
         }
+
         nav a:hover, nav a.active {
-            color: var(--text-dark);
+            color: var(--text-white);
             background: var(--bg-card);
         }
+
+        .hero {
+            text-align: center;
+            padding: 4rem 1.5rem;
+            background: radial-gradient(ellipse at top, #1a1a2e 0%, var(--bg-body) 70%);
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--text-white);
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            color: var(--text-gray);
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
         .content {
             max-width: 800px;
             margin: 0 auto;
-            padding: 3rem 1.5rem 4rem;
+            padding: 4rem 1.5rem;
         }
-        .page-header {
-            background: var(--bg-card);
-            text-align: center;
-            margin-bottom: 3rem;
-        }
-        .page-header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-        }
-        .page-header h1 .gradient {
-            background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-        .page-header p { color: var(--text-gray); font-size: 1.1rem; }
-        .last-updated {
-            display: inline-block;
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            padding: 0.5rem 1rem;
-            border-radius: 8px;
-            font-size: 0.85rem;
-            color: var(--text-gray);
-            margin-top: 1rem;
-        }
-        .card {
+
+        .section {
             background: var(--bg-card);
             border: 1px solid var(--border);
             border-radius: 16px;
             padding: 2rem;
-            margin-bottom: 1.5rem;
+            margin-bottom: 2rem;
         }
-        .card h2 {
-            font-size: 1.2rem;
+
+        .section h2 {
+            font-size: 1.3rem;
+            color: var(--text-white);
             margin-bottom: 1rem;
+        }
+
+        .section p, .section li {
+            color: var(--text-gray);
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+
+        .section ul {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .section a {
             color: var(--primary);
+            text-decoration: none;
         }
-        .card h3 {
-            font-size: 1rem;
-            margin: 1.5rem 0 0.75rem;
-            color: var(--text-dark);
+
+        .section a:hover {
+            text-decoration: underline;
         }
-        .card p {
-            color: var(--text-gray);
-            margin-bottom: 1rem;
-            line-height: 1.7;
+
+        .update-date {
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
         }
-        .card p:last-child { margin-bottom: 0; }
-        .card ul, .card ol {
+
+        .highlight-box {
+            background: rgba(254, 202, 87, 0.1);
+            border: 1px solid rgba(254, 202, 87, 0.3);
+            border-radius: 12px;
+            padding: 1rem;
             margin: 1rem 0;
-            padding-left: 1.5rem;
         }
-        .card li {
-            color: var(--text-gray);
-            padding: 0.4rem 0;
-        }
-        .warning-box {
-            background: linear-gradient(135deg, rgba(245, 158, 11, 0.1), rgba(245, 158, 11, 0.05));
-            border: 1px solid rgba(245, 158, 11, 0.3);
-            border-radius: 12px;
-            padding: 1.25rem;
-            margin: 1.5rem 0;
-        }
-        .warning-box p {
-            color: #fcd34d;
+
+        .highlight-box p {
+            color: var(--secondary);
             margin: 0;
         }
-        .danger-box {
-            background: linear-gradient(135deg, rgba(239, 68, 68, 0.1), rgba(239, 68, 68, 0.05));
-            border: 1px solid rgba(239, 68, 68, 0.3);
-            border-radius: 12px;
-            padding: 1.25rem;
-            margin: 1.5rem 0;
-        }
-        .danger-box p {
-            color: #fca5a5;
-            margin: 0;
-        }
+
         footer {
+            background: var(--bg-card);
             border-top: 1px solid var(--border);
             padding: 2rem 1.5rem;
             text-align: center;
         }
+
         .footer-links {
             display: flex;
             justify-content: center;
@@ -168,17 +182,24 @@
             margin-bottom: 1rem;
             flex-wrap: wrap;
         }
+
         .footer-links a {
             color: var(--text-gray);
             text-decoration: none;
             font-size: 0.9rem;
+            transition: color 0.2s;
         }
+
         .footer-links a:hover { color: var(--primary); }
-        .copyright { color: var(--text-muted); font-size: 0.85rem; }
+
+        .copyright {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
         @media (max-width: 768px) {
             nav { display: none; }
-            .page-header h1 { font-size: 2rem; }
-            .card { padding: 1.5rem; }
+            .hero h1 { font-size: 2rem; }
         }
     </style>
 </head>
@@ -186,182 +207,157 @@
     <header>
         <a href="/" class="logo">
             <div class="logo-icon">▼</div>
-            SSSTiik
+            Download Any TikTok
         </a>
         <nav>
-            <a href="/">Início</a>
-            <a href="/sobre">Sobre</a>
-            <a href="/privacidade">Privacidade</a>
-            <a href="/termos" class="active">Termos</a>
+            <a href="/">Download</a>
+            <a href="/sobre.html">Sobre</a>
+            <a href="/contato.html">Contato</a>
         </nav>
     </header>
 
+    <section class="hero">
+        <h1>Termos de Uso</h1>
+        <p>Por favor, leia atentamente os termos e condições antes de usar nosso serviço.</p>
+    </section>
+
     <main class="content">
-        <div class="page-header">
-            <h1>Termos de <span class="gradient">Uso</span></h1>
-            <p>Regras e condições para utilizar nosso serviço</p>
-            <span class="last-updated">Última atualização: Janeiro de 2025</span>
+        <p class="update-date">Última atualização: 26 de Dezembro de 2025</p>
+
+        <div class="section">
+            <h2>1. Aceitação dos Termos</h2>
+            <p>Ao acessar e usar o Download Any TikTok ("Serviço"), você concorda em cumprir e estar vinculado a estes Termos de Uso. Se você não concordar com qualquer parte destes termos, não poderá usar nosso serviço.</p>
         </div>
 
-        <div class="card">
-            <h2>📜 Aceitação dos Termos</h2>
-            <p>
-                Ao acessar e utilizar o SSSTiik ("Site", "Serviço", "nós"), você concorda em cumprir e ficar vinculado aos seguintes Termos de Uso. Se você não concordar com qualquer parte destes termos, não utilize nosso serviço.
-            </p>
-            <p>
-                Estes termos podem ser atualizados periodicamente. O uso continuado do site após alterações constitui aceitação dos novos termos.
-            </p>
-        </div>
-
-        <div class="card">
-            <h2>🎯 Descrição do Serviço</h2>
-            <p>
-                O SSSTiik é uma ferramenta online gratuita que permite aos usuários baixar vídeos do TikTok para uso pessoal. O serviço funciona processando links públicos do TikTok e fornecendo opções de download do conteúdo.
-            </p>
-            <p>
-                <strong>Nosso serviço inclui:</strong>
-            </p>
+        <div class="section">
+            <h2>2. Descrição do Serviço</h2>
+            <p>O Download Any TikTok é uma ferramenta online gratuita que permite aos usuários baixar vídeos do TikTok sem marca d'água. Nosso serviço:</p>
             <ul>
-                <li>Download de vídeos do TikTok sem marca d'água</li>
-                <li>Opções de qualidade HD e SD</li>
-                <li>Conversão para formato MP3 (apenas áudio)</li>
-                <li>Download de Stories do TikTok</li>
+                <li>Não armazena os vídeos baixados em nossos servidores</li>
+                <li>Atua como intermediário para facilitar o download</li>
+                <li>Não requer criação de conta ou cadastro</li>
+                <li>É fornecido gratuitamente</li>
             </ul>
         </div>
 
-        <div class="card">
-            <h2>✅ Uso Permitido</h2>
-            <p>
-                Você pode utilizar o SSSTiik para:
-            </p>
+        <div class="section">
+            <h2>3. Uso Permitido</h2>
+            <p>Você concorda em usar nosso serviço apenas para fins legais e de acordo com estes Termos. Especificamente, você se compromete a:</p>
             <ul>
-                <li>Baixar vídeos para assistir offline, para uso pessoal</li>
-                <li>Salvar conteúdo educacional ou tutoriais para referência</li>
-                <li>Criar backups de seus próprios vídeos publicados no TikTok</li>
-                <li>Fins de pesquisa e estudo acadêmico</li>
+                <li>Baixar apenas vídeos para uso pessoal e não comercial</li>
+                <li>Respeitar os direitos autorais dos criadores de conteúdo</li>
+                <li>Não redistribuir conteúdo baixado sem autorização do criador original</li>
+                <li>Dar créditos apropriados aos criadores quando compartilhar</li>
+                <li>Não usar o serviço para qualquer atividade ilegal</li>
             </ul>
         </div>
 
-        <div class="card">
-            <h2>🚫 Uso Proibido</h2>
-            <p>
-                É expressamente proibido utilizar o SSSTiik para:
-            </p>
+        <div class="section">
+            <h2>4. Uso Proibido</h2>
+            <p>Você concorda em NÃO usar nosso serviço para:</p>
             <ul>
-                <li>Republicar conteúdo de terceiros como se fosse seu próprio</li>
-                <li>Fins comerciais sem autorização do criador original</li>
-                <li>Distribuir conteúdo protegido por direitos autorais sem permissão</li>
-                <li>Assediar, difamar ou prejudicar criadores de conteúdo</li>
-                <li>Qualquer atividade ilegal em sua jurisdição</li>
-                <li>Sobrecarregar nossos servidores com requisições automatizadas</li>
-                <li>Tentar acessar áreas restritas do sistema</li>
+                <li>Baixar conteúdo com intenção de violação de direitos autorais</li>
+                <li>Fins comerciais sem autorização dos criadores</li>
+                <li>Assediar, difamar ou prejudicar terceiros</li>
+                <li>Distribuir malware ou código malicioso</li>
+                <li>Sobrecarregar nossos servidores com requisições automatizadas excessivas</li>
+                <li>Tentar contornar medidas de segurança do site</li>
+                <li>Coletar informações de outros usuários</li>
             </ul>
-            <div class="danger-box">
-                <p>⚠️ <strong>Aviso:</strong> O uso indevido pode resultar em bloqueio permanente do acesso ao serviço e, em casos graves, em notificação às autoridades competentes.</p>
+        </div>
+
+        <div class="section">
+            <h2>5. Direitos Autorais e Propriedade Intelectual</h2>
+            <div class="highlight-box">
+                <p><strong>⚠️ Importante:</strong> Os vídeos disponíveis no TikTok são protegidos por direitos autorais de seus respectivos criadores. Nosso serviço não possui nem reivindica qualquer direito sobre esses conteúdos.</p>
             </div>
-        </div>
-
-        <div class="card">
-            <h2>©️ Direitos Autorais e Propriedade Intelectual</h2>
-            <p>
-                O SSSTiik respeita os direitos de propriedade intelectual de terceiros e espera que seus usuários façam o mesmo.
-            </p>
-            
-            <h3>Responsabilidade do Usuário</h3>
-            <p>
-                Você é o único responsável por garantir que possui os direitos necessários para baixar, usar e/ou distribuir qualquer conteúdo obtido através do nosso serviço.
-            </p>
-
-            <h3>Conteúdo de Terceiros</h3>
-            <p>
-                Todo conteúdo baixado através do SSSTiik pertence aos seus respectivos criadores e detentores de direitos autorais. Nós não reivindicamos propriedade sobre nenhum conteúdo processado.
-            </p>
-
-            <div class="warning-box">
-                <p>⚡ <strong>Importante:</strong> Se você não é o criador do conteúdo, obtenha permissão antes de usar o material para qualquer fim além do uso pessoal.</p>
-            </div>
-        </div>
-
-        <div class="card">
-            <h2>📋 Procedimento DMCA</h2>
-            <p>
-                Se você é detentor de direitos autorais e acredita que conteúdo disponibilizado através do nosso serviço viola seus direitos, entre em contato conosco.
-            </p>
-            <p>
-                <strong>Para enviar uma notificação DMCA, inclua:</strong>
-            </p>
-            <ol>
-                <li>Identificação do material protegido por direitos autorais</li>
-                <li>URL ou descrição do conteúdo infrator</li>
-                <li>Suas informações de contato</li>
-                <li>Declaração de boa-fé de que o uso não é autorizado</li>
-                <li>Declaração de veracidade das informações</li>
-                <li>Assinatura física ou eletrônica</li>
-            </ol>
-            <p>
-                <strong>Email para notificações:</strong> <span style="color: var(--primary);">legal@ssstiik.com</span>
-            </p>
-        </div>
-
-        <div class="card">
-            <h2>⚖️ Limitação de Responsabilidade</h2>
-            <p>
-                O SSSTiik é fornecido "como está" e "conforme disponível", sem garantias de qualquer tipo, expressas ou implícitas.
-            </p>
-            <p>
-                <strong>Não nos responsabilizamos por:</strong>
-            </p>
+            <p>Ao usar nosso serviço, você reconhece que:</p>
             <ul>
-                <li>Interrupções temporárias ou permanentes do serviço</li>
-                <li>Perda de dados ou danos ao dispositivo do usuário</li>
-                <li>Uso indevido do serviço por terceiros</li>
-                <li>Conteúdo baixado pelos usuários</li>
-                <li>Violações de direitos autorais cometidas por usuários</li>
-                <li>Alterações nos termos de serviço do TikTok que afetem o funcionamento</li>
+                <li>O conteúdo baixado pertence aos seus criadores originais</li>
+                <li>Você é responsável pelo uso que faz do conteúdo baixado</li>
+                <li>O Download Any TikTok não é responsável por violações de direitos autorais cometidas por usuários</li>
+                <li>Criadores podem solicitar remoção de funcionalidades que afetem seu conteúdo</li>
             </ul>
         </div>
 
-        <div class="card">
-            <h2>🔗 Links Externos</h2>
-            <p>
-                Nosso site pode conter links para sites de terceiros. Não somos responsáveis pelo conteúdo, políticas de privacidade ou práticas desses sites.
-            </p>
+        <div class="section">
+            <h2>6. Isenção de Responsabilidade</h2>
+            <p>O serviço é fornecido "como está" e "conforme disponível", sem garantias de qualquer tipo. Não garantimos que:</p>
+            <ul>
+                <li>O serviço estará sempre disponível ou livre de erros</li>
+                <li>Os downloads serão sempre bem-sucedidos</li>
+                <li>O serviço atenderá às suas expectativas específicas</li>
+            </ul>
+            <p>Não nos responsabilizamos por:</p>
+            <ul>
+                <li>Danos diretos ou indiretos decorrentes do uso do serviço</li>
+                <li>Perda de dados ou interrupção de serviço</li>
+                <li>Ações de terceiros relacionadas ao conteúdo baixado</li>
+                <li>Problemas técnicos fora de nosso controle</li>
+            </ul>
         </div>
 
-        <div class="card">
-            <h2>🌍 Jurisdição</h2>
-            <p>
-                Estes Termos de Uso são regidos pelas leis do Brasil. Qualquer disputa relacionada ao uso do serviço será submetida à jurisdição exclusiva dos tribunais brasileiros.
-            </p>
+        <div class="section">
+            <h2>7. Limitação de Responsabilidade</h2>
+            <p>Em nenhuma circunstância o Download Any TikTok, seus proprietários, funcionários ou afiliados serão responsáveis por quaisquer danos especiais, incidentais, indiretos ou consequenciais decorrentes do uso ou incapacidade de uso do serviço.</p>
         </div>
 
-        <div class="card">
-            <h2>📝 Alterações nos Termos</h2>
-            <p>
-                Reservamo-nos o direito de modificar estes termos a qualquer momento. Alterações significativas serão comunicadas através do site. O uso continuado após modificações constitui aceitação dos novos termos.
-            </p>
+        <div class="section">
+            <h2>8. Indenização</h2>
+            <p>Você concorda em indenizar e isentar o Download Any TikTok de quaisquer reclamações, danos, perdas, responsabilidades e despesas (incluindo honorários advocatícios) decorrentes de:</p>
+            <ul>
+                <li>Seu uso do serviço</li>
+                <li>Violação destes Termos</li>
+                <li>Violação de direitos de terceiros</li>
+                <li>Qualquer conteúdo que você baixar ou distribuir usando nosso serviço</li>
+            </ul>
         </div>
 
-        <div class="card">
-            <h2>📧 Contato</h2>
-            <p>
-                Para questões relacionadas a estes Termos de Uso:
-            </p>
-            <p>
-                <strong>Email:</strong> <span style="color: var(--primary);">legal@ssstiik.com</span>
-            </p>
+        <div class="section">
+            <h2>9. Modificações do Serviço</h2>
+            <p>Reservamo-nos o direito de:</p>
+            <ul>
+                <li>Modificar ou descontinuar o serviço a qualquer momento</li>
+                <li>Alterar estes Termos de Uso quando necessário</li>
+                <li>Restringir o acesso ao serviço por qualquer motivo</li>
+            </ul>
+            <p>Alterações significativas serão comunicadas através de aviso em nosso site.</p>
+        </div>
+
+        <div class="section">
+            <h2>10. Links para Terceiros</h2>
+            <p>Nosso site pode conter links para sites de terceiros. Não temos controle sobre o conteúdo ou práticas de privacidade desses sites e não assumimos responsabilidade por eles.</p>
+        </div>
+
+        <div class="section">
+            <h2>11. Lei Aplicável</h2>
+            <p>Estes Termos de Uso serão regidos e interpretados de acordo com as leis do Brasil, independentemente de conflitos de disposições legais.</p>
+        </div>
+
+        <div class="section">
+            <h2>12. Disposições Gerais</h2>
+            <ul>
+                <li>Se qualquer disposição destes Termos for considerada inválida, as demais disposições permanecerão em vigor.</li>
+                <li>A falha em exercer qualquer direito não constituirá renúncia a esse direito.</li>
+                <li>Estes Termos constituem o acordo integral entre você e o Download Any TikTok.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>13. Contato</h2>
+            <p>Para dúvidas sobre estes Termos de Uso, entre em contato através da nossa <a href="/contato.html">página de contato</a>.</p>
         </div>
     </main>
 
     <footer>
         <div class="footer-links">
-            <a href="/">Início</a>
-            <a href="/sobre">Sobre</a>
-            <a href="/privacidade">Política de Privacidade</a>
-            <a href="/termos">Termos de Uso</a>
-            <a href="/contato">Contato</a>
+            <a href="/">Download</a>
+            <a href="/sobre.html">Sobre</a>
+            <a href="/privacidade.html">Política de Privacidade</a>
+            <a href="/termos.html">Termos de Uso</a>
+            <a href="/contato.html">Contato</a>
         </div>
-        <p class="copyright">© 2025 SSSTiik. Todos os direitos reservados.</p>
+        <p class="copyright">© 2025 Download Any TikTok. Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>

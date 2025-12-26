@@ -3,35 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato - SSSTiik</title>
-    <meta name="description" content="Entre em contato com o SSSTiik. Tire suas dúvidas, faça sugestões ou reporte problemas.">
+    <title>Contato - Download Any TikTok | Fale Conosco</title>
+    <meta name="description" content="Entre em contato com o Download Any TikTok. Envie dúvidas, sugestões ou reporte problemas. Estamos aqui para ajudar.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://downloadanytiktok.com/contato.html">
+    
+    <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⬇️</text></svg>">
+    
     <style>
         :root {
-            --primary: #6c5ce7;
-            --primary-light: #a29bfe;
-            --gradient-start: #6c5ce7;
-            --gradient-end: #a29bfe;
-            --bg-body: #f5f5f7;
-            --bg-card: #ffffff;
-            --bg-card-hover: #f8f8fa;
-            --bg-input: #f5f5f7;
-            --text-dark: #1a1a2e;
-            --text-gray: #6b7280;
-            --text-muted: #9ca3af;
-            --border: #e5e7eb;
+            --primary: #ff6b6b;
+            --primary-light: #ff8e8e;
+            --secondary: #feca57;
+            --bg-body: #0a0a0a;
+            --bg-card: #141414;
+            --bg-input: #1a1a1a;
+            --text-white: #ffffff;
+            --text-gray: #a0a0a0;
+            --text-muted: #666666;
+            --border: #2a2a2a;
             --success: #10b981;
+            --gradient-start: #ff6b6b;
+            --gradient-end: #feca57;
         }
+
         * { margin: 0; padding: 0; box-sizing: border-box; }
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
             background: var(--bg-body);
-            color: var(--text-dark);
+            color: var(--text-white);
             min-height: 100vh;
             line-height: 1.6;
         }
+
         header {
-            background: var(--bg-card);
+            background: var(--bg-body);
             padding: 1.25rem 1.5rem;
             display: flex;
             justify-content: space-between;
@@ -39,15 +47,17 @@
             max-width: 1200px;
             margin: 0 auto;
         }
+
         .logo {
             display: flex;
             align-items: center;
             gap: 0.75rem;
             text-decoration: none;
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             font-weight: 700;
-            color: var(--text-dark);
+            color: var(--text-white);
         }
+
         .logo-icon {
             width: 40px;
             height: 40px;
@@ -57,8 +67,15 @@
             align-items: center;
             justify-content: center;
             font-size: 1.25rem;
+            color: white;
         }
-        nav { display: flex; gap: 0.5rem; }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+        }
+
         nav a {
             color: var(--text-gray);
             text-decoration: none;
@@ -68,196 +85,125 @@
             font-weight: 500;
             transition: all 0.2s;
         }
+
         nav a:hover, nav a.active {
-            color: var(--text-dark);
+            color: var(--text-white);
             background: var(--bg-card);
         }
-        .content {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 3rem 1.5rem 4rem;
-        }
-        .page-header {
-            background: var(--bg-card);
+
+        .hero {
             text-align: center;
-            margin-bottom: 3rem;
+            padding: 4rem 1.5rem;
+            background: radial-gradient(ellipse at top, #1a1a2e 0%, var(--bg-body) 70%);
         }
-        .page-header h1 {
+
+        .hero h1 {
             font-size: 2.5rem;
-            margin-bottom: 0.5rem;
+            font-weight: 700;
+            color: var(--text-white);
+            margin-bottom: 1rem;
         }
-        .page-header h1 .gradient {
-            background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+
+        .hero p {
+            color: var(--text-gray);
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
         }
-        .page-header p { color: var(--text-gray); font-size: 1.1rem; }
-        .contact-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 1rem;
-            margin-bottom: 2rem;
+
+        .content {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 4rem 1.5rem;
         }
-        .contact-item {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            padding: 1.5rem;
-            border-radius: 16px;
-            text-align: center;
-            transition: all 0.3s;
-        }
-        .contact-item:hover {
-            border-color: rgba(99, 102, 241, 0.3);
-            transform: translateY(-4px);
-        }
-        .contact-item .icon {
-            font-size: 2rem;
-            margin-bottom: 0.75rem;
-        }
-        .contact-item h3 {
-            font-size: 0.9rem;
-            color: var(--text-dark);
-            margin-bottom: 0.25rem;
-        }
-        .contact-item p {
-            font-size: 0.85rem;
-            color: var(--primary);
-            word-break: break-all;
-        }
-        .card {
+
+        .contact-form {
             background: var(--bg-card);
             border: 1px solid var(--border);
             border-radius: 16px;
             padding: 2rem;
-            margin-bottom: 1.5rem;
         }
-        .card h2 {
-            font-size: 1.2rem;
-            margin-bottom: 1.5rem;
-            color: var(--primary);
-        }
+
         .form-group {
-            margin-bottom: 1.25rem;
+            margin-bottom: 1.5rem;
         }
+
         .form-group label {
             display: block;
-            font-size: 0.9rem;
-            font-weight: 500;
+            font-weight: 600;
+            color: var(--text-white);
             margin-bottom: 0.5rem;
-            color: var(--text-dark);
         }
+
         .form-group input,
-        .form-group textarea,
-        .form-group select {
+        .form-group textarea {
             width: 100%;
-            padding: 0.875rem 1rem;
-            background: var(--bg-input);
+            padding: 1rem;
             border: 1px solid var(--border);
-            border-radius: 10px;
+            border-radius: 12px;
             font-size: 1rem;
             font-family: inherit;
-            color: var(--text-dark);
             transition: border-color 0.2s;
+            background: var(--bg-input);
+            color: var(--text-white);
         }
+
         .form-group input::placeholder,
         .form-group textarea::placeholder {
             color: var(--text-muted);
         }
+
         .form-group input:focus,
-        .form-group textarea:focus,
-        .form-group select:focus {
+        .form-group textarea:focus {
             outline: none;
             border-color: var(--primary);
         }
+
         .form-group textarea {
             min-height: 150px;
             resize: vertical;
         }
-        .form-group select {
-            cursor: pointer;
-        }
-        .form-group select option {
-            background: var(--bg-body);
-        }
+
         .btn-submit {
             width: 100%;
-            padding: 1rem;
+            padding: 1rem 2rem;
             background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
             border: none;
-            border-radius: 10px;
+            border-radius: 12px;
             color: white;
             font-size: 1rem;
             font-weight: 600;
             cursor: pointer;
             transition: all 0.2s;
         }
+
         .btn-submit:hover {
             transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(99, 102, 241, 0.35);
+            box-shadow: 0 8px 25px rgba(255, 107, 107, 0.35);
         }
+
         .success-message {
             display: none;
-            background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(16, 185, 129, 0.05));
-            border: 1px solid rgba(16, 185, 129, 0.3);
+            background: rgba(16, 185, 129, 0.15);
+            border: 1px solid var(--success);
+            color: var(--success);
+            padding: 1rem;
             border-radius: 12px;
-            padding: 1.5rem;
             text-align: center;
             margin-bottom: 1.5rem;
         }
-        .success-message.active { display: block; }
-        .success-message p {
-            color: #6ee7b7;
-            margin: 0;
-        }
-        .faq-section h2 {
-            text-align: center;
-            font-size: 1.5rem;
-            margin-bottom: 1.5rem;
-            color: var(--text-dark);
-        }
-        .faq-item {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            margin-bottom: 0.75rem;
-            overflow: hidden;
-        }
-        .faq-question {
-            padding: 1.25rem 1.5rem;
-            font-weight: 600;
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            transition: background 0.2s;
-        }
-        .faq-question:hover {
-            background: var(--bg-card-hover);
-        }
-        .faq-question::after {
-            content: '+';
-            font-size: 1.25rem;
-            color: var(--text-gray);
-        }
-        .faq-item.active .faq-question::after {
-            content: '−';
-        }
-        .faq-answer {
-            display: none;
-            padding: 0 1.5rem 1.25rem;
-            color: var(--text-gray);
-            font-size: 0.95rem;
-            line-height: 1.6;
-        }
-        .faq-item.active .faq-answer {
+
+        .success-message.active {
             display: block;
         }
+
         footer {
+            background: var(--bg-card);
             border-top: 1px solid var(--border);
             padding: 2rem 1.5rem;
             text-align: center;
         }
+
         .footer-links {
             display: flex;
             justify-content: center;
@@ -265,18 +211,24 @@
             margin-bottom: 1rem;
             flex-wrap: wrap;
         }
+
         .footer-links a {
             color: var(--text-gray);
             text-decoration: none;
             font-size: 0.9rem;
+            transition: color 0.2s;
         }
+
         .footer-links a:hover { color: var(--primary); }
-        .copyright { color: var(--text-muted); font-size: 0.85rem; }
+
+        .copyright {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
         @media (max-width: 768px) {
             nav { display: none; }
-            .page-header h1 { font-size: 2rem; }
-            .card { padding: 1.5rem; }
-            .contact-grid { grid-template-columns: 1fr; }
+            .hero h1 { font-size: 2rem; }
         }
     </style>
 </head>
@@ -284,177 +236,97 @@
     <header>
         <a href="/" class="logo">
             <div class="logo-icon">▼</div>
-            SSSTiik
+            Download Any TikTok
         </a>
         <nav>
-            <a href="/">Início</a>
-            <a href="/sobre">Sobre</a>
-            <a href="/privacidade">Privacidade</a>
-            <a href="/contato" class="active">Contato</a>
+            <a href="/">Download</a>
+            <a href="/sobre.html">Sobre</a>
+            <a href="/contato.html" class="active">Contato</a>
         </nav>
     </header>
 
+    <section class="hero">
+        <h1>Entre em Contato</h1>
+        <p>Tem dúvidas, sugestões ou encontrou algum problema? Estamos aqui para ajudar!</p>
+    </section>
+
     <main class="content">
-        <div class="page-header">
-            <h1>Fale <span class="gradient">Conosco</span></h1>
-            <p>Estamos aqui para ajudar!</p>
-        </div>
-
-        <div class="contact-grid">
-            <div class="contact-item">
-                <div class="icon">📧</div>
-                <h3>Email Geral</h3>
-                <p>contato@ssstiik.com</p>
-            </div>
-            <div class="contact-item">
-                <div class="icon">🔒</div>
-                <h3>Privacidade</h3>
-                <p>privacidade@ssstiik.com</p>
-            </div>
-            <div class="contact-item">
-                <div class="icon">⚖️</div>
-                <h3>Assuntos Legais</h3>
-                <p>legal@ssstiik.com</p>
-            </div>
-        </div>
-
-        <div class="card">
-            <h2>📝 Formulário de Contato</h2>
-            
+        <div class="contact-form">
             <div class="success-message" id="successMessage">
-                <p>✅ <strong>Mensagem enviada com sucesso!</strong><br>Responderemos em até 48 horas úteis.</p>
+                ✅ Mensagem enviada com sucesso! Responderemos em breve.
             </div>
 
-            <form id="contactForm">
+            <form id="contactForm" action="https://formspree.io/f/xwpkvpjr" method="POST">
                 <div class="form-group">
-                    <label for="name">Nome</label>
-                    <input type="text" id="name" name="name" required placeholder="Seu nome">
+                    <label for="email">Seu Email</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        placeholder="seuemail@exemplo.com"
+                        required
+                    >
                 </div>
 
                 <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required placeholder="seu@email.com">
+                    <label for="message">Sua Mensagem</label>
+                    <textarea 
+                        id="message" 
+                        name="message" 
+                        placeholder="Escreva sua mensagem aqui..."
+                        required
+                    ></textarea>
                 </div>
 
-                <div class="form-group">
-                    <label for="subject">Assunto</label>
-                    <select id="subject" name="subject" required>
-                        <option value="">Selecione um assunto</option>
-                        <option value="duvida">Dúvida sobre o serviço</option>
-                        <option value="problema">Reportar problema técnico</option>
-                        <option value="sugestao">Sugestão de melhoria</option>
-                        <option value="parceria">Proposta de parceria</option>
-                        <option value="dmca">Notificação de direitos autorais</option>
-                        <option value="outro">Outro assunto</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="message">Mensagem</label>
-                    <textarea id="message" name="message" required placeholder="Escreva sua mensagem aqui..."></textarea>
-                </div>
+                <input type="hidden" name="_subject" value="Contato via Download Any TikTok">
+                <input type="text" name="_gotcha" style="display:none">
 
                 <button type="submit" class="btn-submit">Enviar Mensagem</button>
             </form>
-        </div>
-
-        <div class="faq-section">
-            <h2>❓ Perguntas Frequentes</h2>
-
-            <div class="faq-item">
-                <div class="faq-question">O serviço é realmente gratuito?</div>
-                <div class="faq-answer">
-                    Sim! O SSSTiik é 100% gratuito. Você pode baixar quantos vídeos quiser sem pagar nada e sem necessidade de cadastro. Nos mantemos através de publicidade não intrusiva.
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question">Por que o download falhou?</div>
-                <div class="faq-answer">
-                    Isso pode acontecer por alguns motivos: o vídeo pode ser privado, ter sido removido, ou estar temporariamente indisponível. Também pode ser um problema de conexão. Tente novamente em alguns minutos ou verifique se o link está correto.
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question">Funciona no iPhone/Android?</div>
-                <div class="faq-answer">
-                    Sim! O SSSTiik funciona em qualquer dispositivo com navegador. No iPhone, após clicar em baixar, toque no botão de compartilhar e selecione "Salvar Vídeo". No Android, o download é feito automaticamente.
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question">É seguro usar o SSSTiik?</div>
-                <div class="faq-answer">
-                    Sim, completamente seguro. Não pedimos acesso à sua conta do TikTok, não coletamos dados pessoais e não instalamos nada no seu dispositivo. Toda a comunicação é criptografada via HTTPS.
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question">Posso baixar vídeos privados?</div>
-                <div class="faq-answer">
-                    Não. O SSSTiik só funciona com vídeos públicos. Se o criador configurou o vídeo como privado ou apenas para amigos, não será possível baixar.
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question">Vocês armazenam os vídeos?</div>
-                <div class="faq-answer">
-                    Não. Nós apenas processamos o link em tempo real e fornecemos o arquivo diretamente para você. Não armazenamos vídeos em nossos servidores.
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question">Quanto tempo demora para responder?</div>
-                <div class="faq-answer">
-                    Respondemos todas as mensagens em até 48 horas úteis. Para assuntos urgentes relacionados a direitos autorais (DMCA), priorizamos respostas mais rápidas.
-                </div>
-            </div>
         </div>
     </main>
 
     <footer>
         <div class="footer-links">
-            <a href="/">Início</a>
-            <a href="/sobre">Sobre</a>
-            <a href="/privacidade">Política de Privacidade</a>
-            <a href="/termos">Termos de Uso</a>
-            <a href="/contato">Contato</a>
+            <a href="/">Download</a>
+            <a href="/sobre.html">Sobre</a>
+            <a href="/privacidade.html">Política de Privacidade</a>
+            <a href="/termos.html">Termos de Uso</a>
+            <a href="/contato.html">Contato</a>
         </div>
-        <p class="copyright">© 2025 SSSTiik. Todos os direitos reservados.</p>
+        <p class="copyright">© 2025 Download Any TikTok. Todos os direitos reservados.</p>
     </footer>
 
     <script>
-        // FAQ accordion
-        document.querySelectorAll('.faq-question').forEach(question => {
-            question.addEventListener('click', () => {
-                const item = question.parentElement;
-                const isActive = item.classList.contains('active');
-                
-                document.querySelectorAll('.faq-item').forEach(faq => {
-                    faq.classList.remove('active');
-                });
-                
-                if (!isActive) {
-                    item.classList.add('active');
-                }
-            });
-        });
+        const form = document.getElementById('contactForm');
+        const successMessage = document.getElementById('successMessage');
 
-        // Form submission
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
+        form.addEventListener('submit', async (e) => {
             e.preventDefault();
             
-            const form = this;
-            const successMessage = document.getElementById('successMessage');
+            const formData = new FormData(form);
             
-            successMessage.classList.add('active');
-            form.reset();
-            
-            successMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
-            
-            setTimeout(() => {
-                successMessage.classList.remove('active');
-            }, 5000);
+            try {
+                const response = await fetch(form.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+
+                if (response.ok) {
+                    successMessage.classList.add('active');
+                    form.reset();
+                    setTimeout(() => {
+                        successMessage.classList.remove('active');
+                    }, 5000);
+                } else {
+                    alert('Erro ao enviar mensagem. Tente novamente.');
+                }
+            } catch (error) {
+                alert('Erro ao enviar mensagem. Tente novamente.');
+            }
         });
     </script>
 </body>
